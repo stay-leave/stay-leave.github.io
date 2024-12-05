@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ABC Widgets, Inc.</title>
+    <title>个人博客网站</title>
     <link>http://localhost:1313/post/</link>
-    <description>Recent content on ABC Widgets, Inc.</description>
+    <description>Recent content on 个人博客网站</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 05 Dec 2024 14:52:58 +0800</lastBuildDate>
