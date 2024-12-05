@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ABC Widgets, Inc.</title>
+    <link>http://localhost:1313/post/</link>
+    <description>Recent content on ABC Widgets, Inc.</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 05 Dec 2024 14:17:06 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>F_t</title>
+      <link>http://localhost:1313/post/f_t/</link>
+      <pubDate>Thu, 05 Dec 2024 14:17:06 +0800</pubDate>
+      <guid>http://localhost:1313/post/f_t/</guid>
+      <description>&lt;h2 id=&#34;第一步&#34;&gt;&#xA;&lt;a class=&#34;header-anchor&#34; href=&#34;#%e7%ac%ac%e4%b8%80%e6%ad%a5&#34;&gt;&lt;/a&gt;&#xA;第一步&#xA;&lt;/h2&gt;&lt;p&gt;包饺子&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hello World</title>
+      <link>http://localhost:1313/post/hello/</link>
+      <pubDate>Wed, 15 Mar 2023 11:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/post/hello/</guid>
+      <description>&lt;p&gt;💘 博麗 霊夢 💘&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
