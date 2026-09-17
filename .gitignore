@@ -1,0 +1,6 @@
+.public-tmp/
+hugo-src/resources/_gen/
+hugo-src/hugo_stats.json
+hugo-src/.hugo_build.lock
+__pycache__/
+*.pyc

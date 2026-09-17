@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>DeepResearch on 小刘的博客站</title><link>https://stay-leave.github.io/tags/deepresearch/</link><description>Recent content from 小刘的博客站</description><generator>Hugo</generator><language>zh-CN</language><managingEditor>2272463882@qq.com (小刘)</managingEditor><webMaster>2272463882@qq.com (小刘)</webMaster><copyright>本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！</copyright><lastBuildDate>Sun, 06 Apr 2025 17:51:29 +0800</lastBuildDate><atom:link href="https://stay-leave.github.io/tags/deepresearch/index.xml" rel="self" type="application/rss+xml"/><item><title>Deepresearch的MCP实践</title><link>https://stay-leave.github.io/post/deepresearch%E7%9A%84mcp%E5%AE%9E%E8%B7%B5/</link><pubDate>Sun, 06 Apr 2025 17:51:29 +0800</pubDate><author>2272463882@qq.com (小刘)</author><guid>https://stay-leave.github.io/post/deepresearch%E7%9A%84mcp%E5%AE%9E%E8%B7%B5/</guid><description>
+<![CDATA[<h1>Deepresearch的MCP实践</h1><p>作者：小刘（2272463882@qq.com）</p>
+        
+          <p>deepresearch是目前最流行的大模型应用范式，将agent应用于调研报告上，实现了用户只需要输入自己的问题，大模型自动搜索信息完成报告的过程。</p>
+<p>区别于rag的单次检索过程和定制化的流程，deepresearch建立在deepsearch的的基础上，由LLM自主控制整个流程。
+deepsearch的核心在于搜索、阅读、推理的循环。接收到查询时，进行搜索和阅读，然后根据当前搜索结果，决定是否终止或是扩展查询继续搜索。
+参考：
+<a href="https://jina.ai/news/a-practical-guide-to-implementing-deepsearch-deepresearch">https://jina.ai/news/a-practical-guide-to-implementing-deepsearch-deepresearch</a></p>
+        
+        <hr><p>本文2025-04-06首发于<a href='https://stay-leave.github.io/'>小刘的博客站</a>，最后修改于2025-04-06</p>]]></description><category>Agent</category></item></channel></rss>

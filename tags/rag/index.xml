@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>RAG on 小刘的博客站</title><link>https://stay-leave.github.io/tags/rag/</link><description>Recent content from 小刘的博客站</description><generator>Hugo</generator><language>zh-CN</language><managingEditor>2272463882@qq.com (小刘)</managingEditor><webMaster>2272463882@qq.com (小刘)</webMaster><copyright>本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！</copyright><lastBuildDate>Wed, 18 Dec 2024 12:42:51 +0800</lastBuildDate><atom:link href="https://stay-leave.github.io/tags/rag/index.xml" rel="self" type="application/rss+xml"/><item><title>多模态RAG设计及实践</title><link>https://stay-leave.github.io/post/%E5%A4%9A%E6%A8%A1%E6%80%81rag%E8%AE%BE%E8%AE%A1%E5%8F%8A%E5%AE%9E%E8%B7%B5/</link><pubDate>Wed, 18 Dec 2024 12:42:51 +0800</pubDate><author>2272463882@qq.com (小刘)</author><guid>https://stay-leave.github.io/post/%E5%A4%9A%E6%A8%A1%E6%80%81rag%E8%AE%BE%E8%AE%A1%E5%8F%8A%E5%AE%9E%E8%B7%B5/</guid><description>
+<![CDATA[<h1>多模态RAG设计及实践</h1><p>作者：小刘（2272463882@qq.com）</p>
+        
+          <h1 id="多模态rag系统">
+<a class="header-anchor" href="#%e5%a4%9a%e6%a8%a1%e6%80%81rag%e7%b3%bb%e7%bb%9f"></a>
+多模态RAG系统
+</h1><p>多模态的RAG相比于文本的RAG多了图片和表格等数据模态，能够给用户更丰富的问答体验，提高沟通效率。</p>
+<p>下面从数据来源，数据解析，预处理，分块策略，数据库设计，索引策略，检索策略，生成策略，精准引用策略，评估方法，效果实测，项目局限和未来发展等方面介绍本项目。</p>
+<p>项目特色：</p>
+<p>①领域：垂直领域的论文问答。</p>
+        
+        <hr><p>本文2024-12-18首发于<a href='https://stay-leave.github.io/'>小刘的博客站</a>，最后修改于2024-12-18</p>]]></description><category>RAG</category></item><item><title>Rags自动生成测试集</title><link>https://stay-leave.github.io/post/rags%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%E6%B5%8B%E8%AF%95%E9%9B%86/</link><pubDate>Sat, 07 Dec 2024 21:59:29 +0800</pubDate><author>2272463882@qq.com (小刘)</author><guid>https://stay-leave.github.io/post/rags%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%E6%B5%8B%E8%AF%95%E9%9B%86/</guid><description>
+<![CDATA[<h1>Rags自动生成测试集</h1><p>作者：小刘（2272463882@qq.com）</p>
+        
+          <p>搭建一个RAG只需要一下午，但是优化却要一年。RAG的评估至关重要，现在最流行的就是RAGS了，社区非常活跃。</p>
+<p>关于评估的指标，无非是从检索、生成、端到端这三部分来评估。
+<a href="https://blog.csdn.net/qq_43814415/article/details/141229613">参见</a></p>
+<p>今天的实践是自动生成测试集。官网链接：<a href="https://docs.ragas.io/en/latest/getstarted/rag_testset_generation/#knowledgegraph-creation">链接</a></p>
+<p>后续真正能用的测试集，还得是自己定义数据加载方法，也可以把数据库的记录导出来。
+还有非英语的处理，还有多种角色的定义。</p>
+        
+        <hr><p>本文2024-12-07首发于<a href='https://stay-leave.github.io/'>小刘的博客站</a>，最后修改于2024-12-07</p>]]></description><category>RAG</category></item><item><title>RAG给回复加上引用</title><link>https://stay-leave.github.io/post/rag%E7%BB%99%E5%9B%9E%E5%A4%8D%E5%8A%A0%E4%B8%8A%E5%BC%95%E7%94%A8/</link><pubDate>Fri, 06 Dec 2024 15:32:45 +0800</pubDate><author>2272463882@qq.com (小刘)</author><guid>https://stay-leave.github.io/post/rag%E7%BB%99%E5%9B%9E%E5%A4%8D%E5%8A%A0%E4%B8%8A%E5%BC%95%E7%94%A8/</guid><description>
+<![CDATA[<h1>RAG给回复加上引用</h1><p>作者：小刘（2272463882@qq.com）</p>
+        
+          <p>我们希望RAG的幻觉减少，最有力的证明就是关键句子参考的某篇文献或报告。然而，大模型的随机性导致提供的引文可能都不存在，所以直接让大模型输出的方式目前是不可靠的。下面总结下添加引文的常见方法。</p>
+<h2 id="一外面加上引文">
+<a class="header-anchor" href="#%e4%b8%80%e5%a4%96%e9%9d%a2%e5%8a%a0%e4%b8%8a%e5%bc%95%e6%96%87"></a>
+一、外面加上引文
+</h2><p>最直接和最简单的方法。当使用检索到的chunk时，就直接把这些chunk的元数据引用。</p>
+        
+        <hr><p>本文2024-12-06首发于<a href='https://stay-leave.github.io/'>小刘的博客站</a>，最后修改于2024-12-06</p>]]></description><category>RAG</category></item></channel></rss>

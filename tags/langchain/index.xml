@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>LangChain on 小刘的博客站</title><link>https://stay-leave.github.io/tags/langchain/</link><description>Recent content from 小刘的博客站</description><generator>Hugo</generator><language>zh-CN</language><managingEditor>2272463882@qq.com (小刘)</managingEditor><webMaster>2272463882@qq.com (小刘)</webMaster><copyright>本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！</copyright><lastBuildDate>Fri, 06 Dec 2024 15:32:45 +0800</lastBuildDate><atom:link href="https://stay-leave.github.io/tags/langchain/index.xml" rel="self" type="application/rss+xml"/><item><title>RAG给回复加上引用</title><link>https://stay-leave.github.io/post/rag%E7%BB%99%E5%9B%9E%E5%A4%8D%E5%8A%A0%E4%B8%8A%E5%BC%95%E7%94%A8/</link><pubDate>Fri, 06 Dec 2024 15:32:45 +0800</pubDate><author>2272463882@qq.com (小刘)</author><guid>https://stay-leave.github.io/post/rag%E7%BB%99%E5%9B%9E%E5%A4%8D%E5%8A%A0%E4%B8%8A%E5%BC%95%E7%94%A8/</guid><description>
+<![CDATA[<h1>RAG给回复加上引用</h1><p>作者：小刘（2272463882@qq.com）</p>
+        
+          <p>我们希望RAG的幻觉减少，最有力的证明就是关键句子参考的某篇文献或报告。然而，大模型的随机性导致提供的引文可能都不存在，所以直接让大模型输出的方式目前是不可靠的。下面总结下添加引文的常见方法。</p>
+<h2 id="一外面加上引文">
+<a class="header-anchor" href="#%e4%b8%80%e5%a4%96%e9%9d%a2%e5%8a%a0%e4%b8%8a%e5%bc%95%e6%96%87"></a>
+一、外面加上引文
+</h2><p>最直接和最简单的方法。当使用检索到的chunk时，就直接把这些chunk的元数据引用。</p>
+        
+        <hr><p>本文2024-12-06首发于<a href='https://stay-leave.github.io/'>小刘的博客站</a>，最后修改于2024-12-06</p>]]></description><category>RAG</category></item></channel></rss>

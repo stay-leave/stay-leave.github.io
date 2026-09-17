@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>MinerU on 小刘的博客站</title><link>https://stay-leave.github.io/tags/mineru/</link><description>Recent content from 小刘的博客站</description><generator>Hugo</generator><language>zh-CN</language><managingEditor>2272463882@qq.com (小刘)</managingEditor><webMaster>2272463882@qq.com (小刘)</webMaster><copyright>本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！</copyright><lastBuildDate>Wed, 18 Dec 2024 12:42:51 +0800</lastBuildDate><atom:link href="https://stay-leave.github.io/tags/mineru/index.xml" rel="self" type="application/rss+xml"/><item><title>多模态RAG设计及实践</title><link>https://stay-leave.github.io/post/%E5%A4%9A%E6%A8%A1%E6%80%81rag%E8%AE%BE%E8%AE%A1%E5%8F%8A%E5%AE%9E%E8%B7%B5/</link><pubDate>Wed, 18 Dec 2024 12:42:51 +0800</pubDate><author>2272463882@qq.com (小刘)</author><guid>https://stay-leave.github.io/post/%E5%A4%9A%E6%A8%A1%E6%80%81rag%E8%AE%BE%E8%AE%A1%E5%8F%8A%E5%AE%9E%E8%B7%B5/</guid><description>
+<![CDATA[<h1>多模态RAG设计及实践</h1><p>作者：小刘（2272463882@qq.com）</p>
+        
+          <h1 id="多模态rag系统">
+<a class="header-anchor" href="#%e5%a4%9a%e6%a8%a1%e6%80%81rag%e7%b3%bb%e7%bb%9f"></a>
+多模态RAG系统
+</h1><p>多模态的RAG相比于文本的RAG多了图片和表格等数据模态，能够给用户更丰富的问答体验，提高沟通效率。</p>
+<p>下面从数据来源，数据解析，预处理，分块策略，数据库设计，索引策略，检索策略，生成策略，精准引用策略，评估方法，效果实测，项目局限和未来发展等方面介绍本项目。</p>
+<p>项目特色：</p>
+<p>①领域：垂直领域的论文问答。</p>
+        
+        <hr><p>本文2024-12-18首发于<a href='https://stay-leave.github.io/'>小刘的博客站</a>，最后修改于2024-12-18</p>]]></description><category>RAG</category></item></channel></rss>
