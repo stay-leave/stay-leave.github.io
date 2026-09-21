@@ -23,6 +23,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       HUGO_VERSION: 0.166.0
+      TZ: Asia/Shanghai
     steps:
       - name: Checkout
         uses: actions/checkout@v4

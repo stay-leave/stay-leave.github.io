@@ -1,6 +1,7 @@
 baseURL = "https://stay-leave.github.io/"
 title = "小刘的博客站"
 theme = "hugo-theme-reimu"
+timeZone = "Asia/Shanghai"
 
 defaultContentLanguage = "zh-CN"
 [languages]
